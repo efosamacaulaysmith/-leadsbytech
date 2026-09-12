@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LeadsByTech · Website &amp; Software Development</title>
+<meta name="description" content="Govt. of India MSME recognized tech consultancy. Custom website development, enterprise software, and B2B automations. Python · Django · React.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#" class="mark">
+      <span class="mark-box">LB</span>
+      <span class="mark-text">LeadsByTech</span>
+    </a>
+    <nav class="main-nav">
+      <a href="#services">Services</a>
+      <a href="#work">Portfolio</a>
+      <a href="#case-studies">Case studies</a>
+      <a href="#blog">Blog</a>
+      <a href="#about">About</a>
+      <a href="#contact" class="nav-cta">Request an audit</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="tag">FIG. 01 — OVERVIEW</p>
+      <h1>We architect the <span class="rotator" id="rotator"><span class="rotator-word is-active">systems</span></span> your business runs on.</h1>
+      <p class="hero-sub">Custom websites, enterprise software, and B2B automations, built by one founder-led team — from first sketch to production deploy.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Request a free tech audit</a>
+        <a href="#services" class="btn btn-ghost">See what we build</a>
+      </div>
+      <dl class="hero-stats">
+        <div class="stat">
+          <dt>50+</dt>
+          <dd>projects shipped</dd>
+        </div>
+        <div class="stat">
+          <dt>$10M+</dt>
+          <dd>client revenue generated</dd>
+        </div>
+        <div class="stat">
+          <dt>99.9%</dt>
+          <dd>system uptime</dd>
+        </div>
+      </dl>
+    </div>
+
+    <div class="hero-diagram" aria-hidden="true">
+      <svg viewBox="0 0 480 520" class="blueprint-svg" id="heroSvg">
+        <!-- corner registration marks -->
+        <g class="reg-marks" stroke="currentColor" fill="none">
+          <path d="M10 30 V10 H30" />
+          <path d="M450 10 H470 V30" />
+          <path d="M470 490 V510 H450" />
+          <path d="M30 510 H10 V490" />
+        </g>
+        <!-- process nodes: animate in sequence, node -> connector -> node -->
+        <g class="draw-path" fill="none" stroke-width="1.5">
+          <circle class="dp dp-node" pathLength="1" style="animation-delay:0s"   cx="90" cy="90"  r="34"/>
+          <path   class="dp dp-link" pathLength="1" style="animation-delay:0.55s" d="M90 124 V186"/>
+          <circle class="dp dp-node" pathLength="1" style="animation-delay:1.05s" cx="90" cy="220" r="34"/>
+          <path   class="dp dp-link" pathLength="1" style="animation-delay:1.6s"  d="M90 254 V316"/>
+          <circle class="dp dp-node" pathLength="1" style="animation-delay:2.1s"  cx="90" cy="350" r="34"/>
+          <path   class="dp dp-link" pathLength="1" style="animation-delay:2.65s" d="M90 384 V436"/>
+          <circle class="dp dp-node" pathLength="1" style="animation-delay:3.15s" cx="90" cy="470" r="34"/>
+        </g>
+        <!-- travel dot: makes one continuous pass down through every node -->
+        <circle r="4" class="travel-dot" id="travelDot">
+          <animateMotion id="travelMotion" dur="3.6s" begin="0.3s" fill="freeze" path="M90 90 L90 470" />
+        </circle>
+        <!-- checkmark: only revealed by JS once the travel dot actually arrives -->
+        <g class="finish-mark" id="finishMark">
+          <path d="M76 470 L86 480 L106 458" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+        <g class="node-labels" font-size="10" letter-spacing="1">
+          <text x="140" y="80">DISCOVERY</text>
+          <text x="140" y="94" class="dim">requirements · roadmap</text>
+          <text x="140" y="210">ARCHITECTURE</text>
+          <text x="140" y="224" class="dim">schema · UX</text>
+          <text x="140" y="340">BUILD</text>
+          <text x="140" y="354" class="dim">code · test cycles</text>
+          <text x="140" y="460">DEPLOY</text>
+          <text x="140" y="474" class="dim">launch · support</text>
+        </g>
+        <g class="dim-lines" stroke="currentColor" stroke-width="0.5" stroke-dasharray="2 3">
+          <line x1="124" y1="90" x2="380" y2="90"/>
+          <line x1="124" y1="220" x2="380" y2="220"/>
+          <line x1="124" y1="350" x2="380" y2="350"/>
+          <line x1="124" y1="470" x2="380" y2="470"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TRUST STRIP ================= -->
+<section class="trust-strip">
+  <div class="wrap trust-inner">
+    <span>MSME Registered — Govt. of India</span>
+    <span class="divider">/</span>
+    <span>4.9 / 5 client rating</span>
+    <span class="divider">/</span>
+    <span>50+ projects delivered</span>
+    <span class="divider">/</span>
+    <span>Direct access to the founder</span>
+  </div>
+</section>
+
+<!-- ================= LOGO MARQUEE ================= -->
+<section class="marquee-strip" aria-label="Companies that have worked with LeadsByTech">
+  <div class="marquee-track">
+    <span>NEXUSCORE</span>
+    <span>VELOSIFY</span>
+    <span>QUANTIXDATA</span>
+    <span>URBANESTATE</span>
+    <span>DATACORE</span>
+    <span>NEXUSCORE</span>
+    <span>VELOSIFY</span>
+    <span>QUANTIXDATA</span>
+    <span>URBANESTATE</span>
+    <span>DATACORE</span>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section class="services" id="services">
+  <div class="wrap">
+    <p class="tag">FIG. 02 — WHAT WE BUILD</p>
+    <h2>Three ways we help businesses scale.</h2>
+
+    <div class="service-grid">
+      <article class="service-card">
+        <span class="service-index">01</span>
+        <h3>Website development</h3>
+        <p>Custom, high-performance websites built to convert — fast, secure, and mobile-first from the first line of code.</p>
+      </article>
+      <article class="service-card">
+        <span class="service-index">02</span>
+        <h3>Software development</h3>
+        <p>Tailor-made systems for how your business actually operates — CRMs, ERPs, school management systems, SaaS products.</p>
+      </article>
+      <article class="service-card">
+        <span class="service-index">03</span>
+        <h3>B2B automations &amp; APIs</h3>
+        <p>Data scraping, API integrations, lead generation engines, and workflow automation that removes manual work.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PORTFOLIO ================= -->
+<section class="portfolio" id="work">
+  <div class="wrap">
+    <p class="tag">FIG. 03 — SELECTED WORK</p>
+    <h2>Projects that deliver results.</h2>
+    <p class="portfolio-sub">50+ projects delivered across 40+ industries, with a 98% client satisfaction rate and $10M+ in client revenue generated.</p>
+
+    <dl class="portfolio-stats">
+      <div><dt>50+</dt><dd>projects delivered</dd></div>
+      <div><dt>98%</dt><dd>client satisfaction</dd></div>
+      <div><dt>40+</dt><dd>industries served</dd></div>
+      <div><dt>$10M+</dt><dd>client revenue generated</dd></div>
+    </dl>
+
+    <div class="portfolio-filters" role="group" aria-label="Filter projects by category">
+      <button class="filter-btn is-active" data-filter="all">All projects</button>
+      <button class="filter-btn" data-filter="website">Websites</button>
+      <button class="filter-btn" data-filter="software">Software</button>
+      <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+      <button class="filter-btn" data-filter="automation">Automation</button>
+    </div>
+
+    <div class="portfolio-grid">
+      <article class="portfolio-card" data-category="website">
+        <p class="portfolio-tag">WEBSITE</p>
+        <h3>Premium real estate website</h3>
+        <p>High-performance real estate website with property listings, search filters, and a lead capture system for a Dubai-based agency.</p>
+        <div class="portfolio-stack">
+          <span>React</span><span>Django</span><span>PostgreSQL</span>
+        </div>
+        <p class="portfolio-result">300% lead increase</p>
+      </article>
+
+      <article class="portfolio-card" data-category="software">
+        <p class="portfolio-tag">SOFTWARE</p>
+        <h3>CRM dashboard platform</h3>
+        <p>Custom CRM dashboard with lead tracking, analytics, and team collaboration features for B2B sales teams.</p>
+        <div class="portfolio-stack">
+          <span>Python</span><span>Django</span><span>React</span>
+        </div>
+        <p class="portfolio-result">40% retention increase</p>
+      </article>
+
+      <article class="portfolio-card" data-category="ecommerce">
+        <p class="portfolio-tag">E-COMMERCE</p>
+        <h3>Auto-inventory management system</h3>
+        <p>Automated inventory sync across Amazon, Shopify, and warehouse systems with real-time stock updates and alerts.</p>
+        <div class="portfolio-stack">
+          <span>Python</span><span>Django</span><span>APIs</span>
+        </div>
+        <p class="portfolio-result">85% error reduction</p>
+      </article>
+
+      <article class="portfolio-card" data-category="automation">
+        <p class="portfolio-tag">AUTOMATION</p>
+        <h3>Lead mining &amp; enrichment engine</h3>
+        <p>Automated lead extraction from 8+ platforms with data validation, enrichment, and delivery to CRM systems.</p>
+        <div class="portfolio-stack">
+          <span>Python</span><span>Scraping</span><span>APIs</span>
+        </div>
+        <p class="portfolio-result">300% lead volume increase</p>
+      </article>
+
+      <article class="portfolio-card" data-category="website">
+        <p class="portfolio-tag">WEBSITE</p>
+        <h3>Multi-vendor e-commerce platform</h3>
+        <p>Full-featured multi-vendor marketplace with vendor dashboards, payment splitting, and analytics.</p>
+        <div class="portfolio-stack">
+          <span>React</span><span>Django</span><span>Stripe</span>
+        </div>
+        <p class="portfolio-result">$500k+ annual revenue</p>
+      </article>
+
+      <article class="portfolio-card" data-category="software">
+        <p class="portfolio-tag">SOFTWARE</p>
+        <h3>School ERP management system</h3>
+        <p>Complete school management system with student records, fee management, attendance, and report generation.</p>
+        <div class="portfolio-stack">
+          <span>Python</span><span>Django</span><span>PostgreSQL</span>
+        </div>
+        <p class="portfolio-result">80% administrative efficiency</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CASE STUDIES ================= -->
+<section class="case-studies" id="case-studies">
+  <div class="wrap">
+    <p class="tag">FIG. 04 — SUCCESS STORIES</p>
+    <h2>Real results for real businesses.</h2>
+    <p class="portfolio-sub">Four projects, broken down the way we actually approached them — the problem, what we built, and what changed afterward.</p>
+
+    <div class="case-list">
+      <article class="case-card">
+        <div class="case-meta">
+          <span class="case-industry">Real estate</span>
+          <span class="dim">Dubai, UAE · 2024 · 6 weeks</span>
+        </div>
+        <h3>Real estate lead generation engine</h3>
+        <div class="case-cols">
+          <div>
+            <h4>The challenge</h4>
+            <ul>
+              <li>Manual lead entry from 8+ listing sites</li>
+              <li>2–3 day response time to new leads</li>
+              <li>Low lead quality and high bounce rates</li>
+              <li>Losing deals to delayed contact</li>
+            </ul>
+          </div>
+          <div>
+            <h4>The solution</h4>
+            <ul>
+              <li>Automated extraction from 8+ platforms</li>
+              <li>Data cleaning and validation pipeline</li>
+              <li>Django CRM with lead management</li>
+              <li>Instant email and SMS notifications</li>
+            </ul>
+          </div>
+        </div>
+        <dl class="case-metrics">
+          <div><dt>300%</dt><dd>lead volume increase</dd></div>
+          <div><dt>60 min</dt><dd>response time, from 2–3 days</dd></div>
+          <div><dt>35%</dt><dd>higher conversion rate</dd></div>
+          <div><dt>20 hrs</dt><dd>weekly time saved</dd></div>
+        </dl>
+        <div class="portfolio-stack">
+          <span>Python</span><span>Django</span><span>React</span><span>PostgreSQL</span><span>Web scraping</span>
+        </div>
+      </article>
+
+      <article class="case-card">
+        <div class="case-meta">
+          <span class="case-industry">E-commerce</span>
+          <span class="dim">India · 2024 · 4 weeks</span>
+        </div>
+        <h3>Data cleaning &amp; validation pipeline</h3>
+        <div class="case-cols">
+          <div>
+            <h4>The challenge</h4>
+            <ul>
+              <li>45% email bounce rate</li>
+              <li>High unsubscribe and spam complaints</li>
+              <li>Duplicate and invalid customer data</li>
+              <li>Declining campaign effectiveness</li>
+            </ul>
+          </div>
+          <div>
+            <h4>The solution</h4>
+            <ul>
+              <li>Automated deduplication system</li>
+              <li>SMTP email validation</li>
+              <li>Data normalization and standardization</li>
+              <li>Customer segmentation and targeting</li>
+            </ul>
+          </div>
+        </div>
+        <dl class="case-metrics">
+          <div><dt>85%</dt><dd>bounce rate reduction</dd></div>
+          <div><dt>28%</dt><dd>CTR improvement</dd></div>
+          <div><dt>45%</dt><dd>campaign cost reduction</dd></div>
+          <div><dt>3x</dt><dd>better campaign performance</dd></div>
+        </dl>
+        <div class="portfolio-stack">
+          <span>Python</span><span>PostgreSQL</span><span>SMTP</span><span>Data pipeline</span><span>APIs</span>
+        </div>
+      </article>
+
+      <article class="case-card">
+        <div class="case-meta">
+          <span class="case-industry">SaaS</span>
+          <span class="dim">India / Global · 2024 · 8 weeks</span>
+        </div>
+        <h3>Dashboard &amp; analytics platform</h3>
+        <div class="case-cols">
+          <div>
+            <h4>The challenge</h4>
+            <ul>
+              <li>Aggregating data from multiple sources</li>
+              <li>Real-time analytics and reporting</li>
+              <li>Handling thousands of concurrent users</li>
+              <li>An 8-week launch deadline</li>
+            </ul>
+          </div>
+          <div>
+            <h4>The solution</h4>
+            <ul>
+              <li>Django + PostgreSQL backend</li>
+              <li>React frontend with real-time updates</li>
+              <li>AWS auto-scaling infrastructure</li>
+              <li>Advanced analytics and dashboards</li>
+            </ul>
+          </div>
+        </div>
+        <dl class="case-metrics">
+          <div><dt>8 wks</dt><dd>launch timeline</dd></div>
+          <div><dt>10k+</dt><dd>monthly active users</dd></div>
+          <div><dt>$500k+</dt><dd>annual revenue generated</dd></div>
+          <div><dt>98%</dt><dd>client satisfaction</dd></div>
+        </dl>
+        <div class="portfolio-stack">
+          <span>Python</span><span>Django</span><span>React</span><span>PostgreSQL</span><span>AWS</span><span>Redis</span>
+        </div>
+      </article>
+
+      <article class="case-card">
+        <div class="case-meta">
+          <span class="case-industry">Education</span>
+          <span class="dim">India · 2024 · 10 weeks</span>
+        </div>
+        <h3>School ERP management system</h3>
+        <div class="case-cols">
+          <div>
+            <h4>The challenge</h4>
+            <ul>
+              <li>Manual student record management</li>
+              <li>Fee collection and tracking issues</li>
+              <li>Time-consuming attendance tracking</li>
+              <li>No centralized reporting system</li>
+            </ul>
+          </div>
+          <div>
+            <h4>The solution</h4>
+            <ul>
+              <li>Complete student management module</li>
+              <li>Automated fee collection and reminders</li>
+              <li>Digital attendance system</li>
+              <li>Advanced reporting and analytics</li>
+            </ul>
+          </div>
+        </div>
+        <dl class="case-metrics">
+          <div><dt>80%</dt><dd>administrative efficiency gain</dd></div>
+          <div><dt>100%</dt><dd>fee collection accuracy</dd></div>
+          <div><dt>90%</dt><dd>time saved on attendance</dd></div>
+          <div><dt>1000+</dt><dd>students managed</dd></div>
+        </dl>
+        <div class="portfolio-stack">
+          <span>Python</span><span>Django</span><span>PostgreSQL</span><span>REST APIs</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHY ================= -->
+<section class="why">
+  <div class="wrap why-grid">
+    <div class="why-lead">
+      <p class="tag">FIG. 05 — HOW WE WORK</p>
+      <h2>Enterprise-grade, without the enterprise overhead.</h2>
+    </div>
+    <div class="why-list">
+      <div class="why-item">
+        <h4>Clean, maintainable code</h4>
+        <p>Industry best practices, no shortcuts, no technical debt left for you to inherit.</p>
+      </div>
+      <div class="why-item">
+        <h4>Direct access to the founder</h4>
+        <p>You work with Mueezur, the architect behind every project — no middlemen, no relay of information.</p>
+      </div>
+      <div class="why-item">
+        <h4>Measurable results</h4>
+        <p>Every build is designed around a business outcome, not just a finished screen.</p>
+      </div>
+      <div class="why-item">
+        <h4>Support after launch</h4>
+        <p>Maintenance and continuous improvement are part of the engagement, not an upsell.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROCESS ================= -->
+<section class="process" id="process">
+  <div class="wrap">
+    <p class="tag">FIG. 06 — PROCESS</p>
+    <h2>From first sketch to production.</h2>
+    <ol class="process-list">
+      <li>
+        <span class="process-num">01</span>
+        <div>
+          <h4>Discovery &amp; strategy</h4>
+          <p>We map your business goals and pain points into a concrete project roadmap and timeline.</p>
+        </div>
+      </li>
+      <li>
+        <span class="process-num">02</span>
+        <div>
+          <h4>Architecture &amp; design</h4>
+          <p>System architecture, database schema, and user experience — the blueprint before we build.</p>
+        </div>
+      </li>
+      <li>
+        <span class="process-num">03</span>
+        <div>
+          <h4>Development &amp; testing</h4>
+          <p>Clean code with comprehensive testing, and regular checkpoints so you always know where things stand.</p>
+        </div>
+      </li>
+      <li>
+        <span class="process-num">04</span>
+        <div>
+          <h4>Deployment &amp; support</h4>
+          <p>We deploy to production, train your team, and stay on for ongoing support.</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================= STACK ================= -->
+<section class="stack" id="stack">
+  <div class="wrap">
+    <p class="tag light">FIG. 07 — TECHNOLOGY</p>
+    <h2 class="light">The tools behind the build.</h2>
+    <div class="stack-table">
+      <div class="stack-row"><span>Python</span><span class="dim">3.12</span></div>
+      <div class="stack-row"><span>Django</span><span class="dim">5.0</span></div>
+      <div class="stack-row"><span>React</span><span class="dim">18.2</span></div>
+      <div class="stack-row"><span>PostgreSQL</span><span class="dim">16</span></div>
+      <div class="stack-row"><span>Docker</span><span class="dim">24</span></div>
+      <div class="stack-row"><span>AWS</span><span class="dim">cloud</span></div>
+      <div class="stack-row"><span>Redis</span><span class="dim">7.2</span></div>
+      <div class="stack-row"><span>TypeScript</span><span class="dim">5.3</span></div>
+      <div class="stack-row"><span>GitHub CI/CD</span><span class="dim">—</span></div>
+      <div class="stack-row"><span>Kubernetes</span><span class="dim">1.28</span></div>
+      <div class="stack-row"><span>Node.js</span><span class="dim">20</span></div>
+      <div class="stack-row"><span>MongoDB</span><span class="dim">6</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BLOG ================= -->
+<section class="blog" id="blog">
+  <div class="wrap">
+    <p class="tag">FIG. 08 — INSIGHTS</p>
+    <h2>Tech insights &amp; guides.</h2>
+    <p class="portfolio-sub">Notes from the builds themselves — what worked, what we'd change, and how the systems actually came together.</p>
+
+    <div class="blog-grid">
+      <article class="blog-card">
+        <p class="blog-meta"><span>Software development</span><span class="dim">· 12 min read</span></p>
+        <h3>Building a complete school ERP system with Django</h3>
+        <p>How we built a system managing 1,000+ students, automated fee collection, digitized attendance, and real-time reporting — all with Django and PostgreSQL.</p>
+        <div class="portfolio-stack">
+          <span>Python</span><span>Django</span><span>PostgreSQL</span><span>ERP</span>
+        </div>
+        <p class="blog-byline">Mueezur Rehman · March 15, 2025</p>
+      </article>
+
+      <article class="blog-card">
+        <p class="blog-meta"><span>E-commerce</span><span class="dim">· 10 min read</span></p>
+        <h3>Automating e-commerce inventory management with Python</h3>
+        <p>How an automated inventory sync between Amazon, Shopify, and warehouse systems cut errors by 85% and saved 20+ hours a week.</p>
+        <div class="portfolio-stack">
+          <span>Python</span><span>Django</span><span>APIs</span><span>E-commerce</span>
+        </div>
+        <p class="blog-byline">Mueezur Rehman · March 10, 2025</p>
+      </article>
+
+      <article class="blog-card">
+        <p class="blog-meta"><span>Automation</span><span class="dim">· 14 min read</span></p>
+        <h3>Building a B2B lead generation engine with scraping &amp; AI</h3>
+        <p>A step-by-step look at an automated system that extracts, validates, and enriches B2B leads from 8+ platforms, delivering 300% more leads.</p>
+        <div class="portfolio-stack">
+          <span>Python</span><span>Scraping</span><span>AI</span><span>Lead generation</span>
+        </div>
+        <p class="blog-byline">Mueezur Rehman · March 5, 2025</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<section class="testimonials">
+  <div class="wrap">
+    <p class="tag">FIG. 09 — CLIENT RESULTS</p>
+    <h2>What changed after launch.</h2>
+    <div class="testi-grid">
+      <blockquote>
+        <p>Conversion rate increased by 35% within the first month. The quality of leads is exceptional.</p>
+        <cite>Ahmed Al-Mansouri — CEO, Premium Real Estate Dubai</cite>
+      </blockquote>
+      <blockquote>
+        <p>The data cleaning solution saved us thousands. Our bounce rate dropped from 45% to 7%.</p>
+        <cite>Neha Sharma — Marketing Director, EcommercePro India</cite>
+      </blockquote>
+      <blockquote>
+        <p>Delivered on time, within budget, with exceptional code quality — clean, maintainable, and built to scale.</p>
+        <cite>Rajesh Patel — Founder, DataDash Analytics</cite>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOUNDER ================= -->
+<section class="founder" id="about">
+  <div class="wrap founder-grid">
+    <div class="founder-mark" aria-hidden="true">
+      <svg viewBox="0 0 200 200">
+        <rect x="10" y="10" width="180" height="180" fill="none" stroke="currentColor" stroke-width="1"/>
+        <text x="100" y="110" text-anchor="middle" font-size="42" font-family="var(--font-mono)">MR</text>
+      </svg>
+    </div>
+    <div>
+      <p class="tag">FIG. 10 — THE FOUNDER</p>
+      <h2>Mueezur Rehman, Full-Stack Architect.</h2>
+      <p>Five years of enterprise development experience, spent architecting websites, software systems, and automation pipelines that generate measurable ROI for businesses across the globe.</p>
+      <p>Precision over volume: every line of code has to serve a purpose, every architecture has to scale, every solution has to drive growth.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="contact-section" id="contact">
+  <div class="wrap">
+    <p class="tag light">FIG. 11 — GET IN TOUCH</p>
+    <h2 class="light">Let's build something great.</h2>
+    <p class="cta-sub">Have a project in mind? Let's discuss how we can help you scale with enterprise-grade technology.</p>
+
+    <dl class="contact-stats">
+      <div><dt>2 hrs</dt><dd>average response time</dd></div>
+      <div><dt>98%</dt><dd>client satisfaction</dd></div>
+      <div><dt>24/7</dt><dd>project support</dd></div>
+    </dl>
+
+    <div class="contact-grid">
+      <div class="contact-details">
+        <p class="tag light">REACH US INSTANTLY</p>
+        <dl class="contact-list">
+          <div><dt>Email</dt><dd><a href="mailto:hello@leadsbytech.com">hello@leadsbytech.com</a></dd></div>
+          <div><dt>Phone</dt><dd><a href="tel:+919522996669">+91 9522 996 669</a></dd></div>
+          <div><dt>Location</dt><dd>Burhanpur, Madhya Pradesh, India</dd></div>
+          <div><dt>Working hours</dt><dd>Mon–Fri, 9:00 AM – 6:00 PM IST</dd></div>
+        </dl>
+
+        <div class="quick-connect">
+          <a href="https://calendly.com/leadsbytech/15-minutes-discussion" target="_blank" rel="noopener" class="quick-link">
+            <span>Schedule a call</span><span class="dim">Book a meeting directly</span>
+          </a>
+          <a href="https://wa.me/919522996669" target="_blank" rel="noopener" class="quick-link">
+            <span>WhatsApp</span><span class="dim">Instant messaging</span>
+          </a>
+          <a href="https://teams.live.com/meet/9312751003309" target="_blank" rel="noopener" class="quick-link">
+            <span>Teams call</span><span class="dim">Voice or video call</span>
+          </a>
+          <a href="mailto:hello@leadsbytech.com" class="quick-link">
+            <span>Email us</span><span class="dim">We'll respond within 2 hours</span>
+          </a>
+        </div>
+      </div>
+
+      <form class="contact-form">
+        <p class="tag light">SEND A MESSAGE</p>
+        <label>Full name<input type="text" name="name" required></label>
+        <label>Email address<input type="email" name="email" required></label>
+        <label>What are you looking for?
+          <select name="service">
+            <option>Website development</option>
+            <option>Custom software development</option>
+            <option>E-commerce platform</option>
+            <option>B2B automations &amp; APIs</option>
+            <option>Tech consulting</option>
+            <option>Other</option>
+          </select>
+        </label>
+        <label>Message<textarea name="message" rows="4" required></textarea></label>
+        <button type="submit" class="btn btn-primary">Send message</button>
+        <p class="form-note">Your information is secure and never shared.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div>
+      <span class="mark-box">LB</span>
+      <p>Custom website development, enterprise software, and B2B automations. Govt. of India MSME recognized.</p>
+    </div>
+    <div class="footer-cols">
+      <div>
+        <h5>Quick links</h5>
+        <a href="#services">Services</a>
+        <a href="#work">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div>
+        <h5>Connect</h5>
+        <a href="mailto:hello@leadsbytech.com">hello@leadsbytech.com</a>
+        <a href="tel:+919522996669">+91 9522 996 669</a>
+        <span>Burhanpur, MP, India</span>
+      </div>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© 2026 LeadsByTech Solutions.</span>
+    <span>Built with Python &amp; Precision.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
